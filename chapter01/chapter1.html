@@ -13,26 +13,8 @@
 내부 스크립트; 문서 안에 직접 <.script><./script>사용해 자바스크립트 소스만 모아두는 스크립트; 모든 곳에 위치 가능, 바로 실행. 여러개 사용 가능. 주로<./body> 앞
 소스를 여러 웹문서에 사용 시 똑같은 소스를 반복해야하는 단점.-> 외부 스크립트 파일로 저장해 링크<.script src="스크립트 파일 경로"><./script>
 
-  
-<h2>예제 1</h2>
-<h3><a href="hi.html">내부 스크립트를 작성해 무작위로 문서의 배경 색 바꾸기</a></h3>
-<body>
-  <p>새로 고침해 보세요</p>
-  
-  <script>
-    function random(number) {
-      return Math.floor(Math.random() * number);
-    }
 
-    function bgChange() {
-      const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
-      document.body.style.backgroundColor = rndCol;
-    }
-
-      bgChange();
-    </script>
-</body>
-</html>
+<h3><a href="예제1">예제 1 내부 스크립트를 작성해 무작위로 문서의 배경 색 바꾸기</a></h3>
 
 <h2>실습</h2>
 <h3>별도로 외부 스크립트 파일 저장하기</h3>
