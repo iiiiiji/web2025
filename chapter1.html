@@ -10,3 +10,21 @@
   
 인라인 스크립트; html 태그 안에 직접 작성하는 자바스크립트 ex) '<button onclick="alert('버튼이 클릭되었습니다!')">클릭</button>'
 내부 스크립트; <script></script>사용해 자바스크립트 소스만 모아두는 스크립트; 모든 곳에 위치 가능, 바로 실행. 여러개 사용 가능. 주로</body> 앞
+
+<body>
+  <p>새로 고침해 보세요</p>
+  
+  <script>
+    function random(number) {
+      return Math.floor(Math.random() * number);
+    }
+
+    function bgChange() {
+      const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+      document.body.style.backgroundColor = rndCol;
+    }
+
+      bgChange();
+    </script>
+</body>
+</html>
