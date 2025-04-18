@@ -3,5 +3,11 @@
 <h3>chapter 2 실습 문제</h3>
 <h5>화씨 온도를 섭씨 온도로 변환하기</h5>
 <h6>섭씨온도 = (화씨온도 - 32) / 1.8 </h6>
-<script src="js/chapter2.js"></script>
+  <script>
+    let fah = parseFloat(prompt("변환할 화씨 온도"));
+    let cel;
+
+    cel = ((fah - 32) / 1.8).toFixed(1);
+    alert(`화씨 ${fah}도는 섭씨 ${cel}도입니다.`);
+  </script>
 </body>
