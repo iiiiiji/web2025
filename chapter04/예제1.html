@@ -1,0 +1,11 @@
+<script>
+function showData(name, age) { // (3) userName과 userAge를 인수로
+  alert(`안녕하세요? ${name}님. 나이가 ${age}살이군요.`);
+}
+function getData(callback) {
+  let userName = prompt("이름을 입력하세요.");
+  let userAge = prompt("나이를 입력하세요.");
+  callback(userName, userAge); // (2) showData(userName, userAge)
+}
+getData(showData); // (1) getData() 함수에서 실행할 콜백함수 showdata() 지정
+</script>
